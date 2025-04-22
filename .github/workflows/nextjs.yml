@@ -74,13 +74,15 @@ jobs:
       - name: Install initial dependencies
         run: npm install
 
-      - name: Build 
-        run: npm run build
+      # - name: Build 
+      #   run: npm run build
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      # - name: Build with Next.js
-      #   run: ${{ steps.detect-package-manager.outputs.runner }} next build
+
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
