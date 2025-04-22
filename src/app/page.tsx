@@ -25,6 +25,10 @@ export default function Home() {
           </li>
         </ol>
 
+        <div>
+          <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlRGG.img?w=660&h=1028&m=6&x=5&y=389&s=502&d=162" alt="" />
+          <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlDUO.img?w=640&h=428&m=6&x=420&y=89&s=116&d=116" alt="" />
+        </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
