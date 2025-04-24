@@ -26,6 +26,7 @@ export default function Home() {
         </ol>
 
         <div>
+          <img src="https://drive.google.com/file/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA/view?usp=drive_link" alt="" />
           <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlRGG.img?w=660&h=1028&m=6&x=5&y=389&s=502&d=162" alt="" />
           <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlDUO.img?w=640&h=428&m=6&x=420&y=89&s=116&d=116" alt="" />
         </div>
