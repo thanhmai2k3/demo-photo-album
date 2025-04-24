@@ -27,8 +27,7 @@ export default function Home() {
 
         <div>
           <img src="https://lh3.googleusercontent.com/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA" data-src="https://lh3.googleusercontent.com/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA" alt="Đang tải ảnh ..."/>
-						
-          <img src="https://drive.google.com/uc?export=view&id=" alt="Drive Image" />
+          <img src="https://lh3.googleusercontent.com/d/1X_UQSekrlLP_SIpg7he7sbncD9x28Szg" data-src="https://lh3.googleusercontent.com/d/1X_UQSekrlLP_SIpg7he7sbncD9x28Szg" alt="Đang tải ảnh ..."/>
           <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlRGG.img?w=660&h=1028&m=6&x=5&y=389&s=502&d=162" alt="" />
           <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlDUO.img?w=640&h=428&m=6&x=420&y=89&s=116&d=116" alt="" />
         </div>
