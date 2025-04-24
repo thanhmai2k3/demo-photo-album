@@ -1,9 +1,18 @@
 import Image from "next/image";
+import MyImage from '@/lib/MyImage';
+
 
 const config = require("../../next.config");
 
 
 export default function Home() {
+
+  const imageIds = [
+    '1epKNAHN8HV6HxgQYDFtWoM9JDRGjTB5Z',
+    '1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA',
+    '1-cLhhIoqY8rrD6-A97x_OTT_faCS5q8G',
+  ];
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -16,10 +25,11 @@ export default function Home() {
           priority
         />
         <div>{'|' + config.basePath + '|' + '"Next.js logo"'}</div>
-        <div style={{ background: "green" }}>
-          <img src="https://lh3.googleusercontent.com/d/1epKNAHN8HV6HxgQYDFtWoM9JDRGjTB5Z" data-src="https://lh3.googleusercontent.com/d/1epKNAHN8HV6HxgQYDFtWoM9JDRGjTB5Z" alt="Đang tải ảnh ..."/>
-          <img src="https://lh3.googleusercontent.com/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA" data-src="https://lh3.googleusercontent.com/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA" alt="Đang tải ảnh ..."/>
-          <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlDUO.img?w=640&h=428&m=6&x=420&y=89&s=116&d=116" alt="" />
+        <MyImage ids={imageIds} />
+        <div className="flex gap-4 items-center flex-col sm:flex-row" style={{ background: "green" }}>
+          <img src="https://lh3.googleusercontent.com/d/1epKNAHN8HV6HxgQYDFtWoM9JDRGjTB5Z" alt="Đang tải ảnh ..."/>
+          <img src="https://lh3.googleusercontent.com/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA" alt="Đang tải ảnh ..."/>
+          <img src="https://lh3.googleusercontent.com/d/1-cLhhIoqY8rrD6-A97x_OTT_faCS5q8G" alt="Đang tải ảnh ..." />
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
