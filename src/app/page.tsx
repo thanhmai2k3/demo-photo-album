@@ -10,7 +10,7 @@ export default function Home() {
         <Image
           className="dark:invert"
           src={config.basePath + "/next.svg"}
-          alt={config.basePath + '"Next.js logo"'}
+          alt="Next.js logo"
           width={180}
           height={38}
           priority
@@ -30,7 +30,7 @@ export default function Home() {
           >
             <Image
               className="dark:invert"
-              src="/vercel.svg"
+              src={config.basePath + "/vercel.svg"}
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -56,7 +56,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src={config.basePath + "/file.svg"}
             alt="File icon"
             width={16}
             height={16}
@@ -71,7 +71,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src={config.basePath + "/window.svg"}
             alt="Window icon"
             width={16}
             height={16}
@@ -86,7 +86,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src={config.basePath + "/globe.svg"}
             alt="Globe icon"
             width={16}
             height={16}
