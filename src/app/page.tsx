@@ -1,35 +1,24 @@
 import Image from "next/image";
 
+const config = require("../../next.config");
+
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
+          src={config.basePath + "/next.svg"}
+          alt={config.basePath + '"Next.js logo"'}
           width={180}
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div>
+        <div>{'|' + config.basePath + '|' + '"Next.js logo"'}</div>
+        <div style={{ background: "green" }}>
           <img src="https://lh3.googleusercontent.com/d/1epKNAHN8HV6HxgQYDFtWoM9JDRGjTB5Z" data-src="https://lh3.googleusercontent.com/d/1epKNAHN8HV6HxgQYDFtWoM9JDRGjTB5Z" alt="Đang tải ảnh ..."/>
           <img src="https://lh3.googleusercontent.com/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA" data-src="https://lh3.googleusercontent.com/d/1KCcPBLMj64m3mUVQo0RN8_4FgiHQAxsA" alt="Đang tải ảnh ..."/>
-          <img src="https://lh3.googleusercontent.com/d/1X_UQSekrlLP_SIpg7he7sbncD9x28Szg" data-src="https://lh3.googleusercontent.com/d/1X_UQSekrlLP_SIpg7he7sbncD9x28Szg" alt="Đang tải ảnh ..."/>
-          <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlRGG.img?w=660&h=1028&m=6&x=5&y=389&s=502&d=162" alt="" />
           <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1DlDUO.img?w=640&h=428&m=6&x=420&y=89&s=116&d=116" alt="" />
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
